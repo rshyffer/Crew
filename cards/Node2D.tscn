@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/Cards/CardBorder.png" type="Texture" id=1]
+[ext_resource path="res://assets/Cards/Backgrounds/Blue.png" type="Texture" id=2]
+[ext_resource path="res://assets/Cards/Number/1.png" type="Texture" id=3]
+[ext_resource path="res://assets/Cards/Logo/1.png" type="Texture" id=4]
+[ext_resource path="res://cards/CardBase.gd" type="Script" id=5]
+
+[node name="CardBase" type="MarginContainer"]
+margin_left = -240.637
+margin_top = -369.549
+margin_right = 443.363
+margin_bottom = 688.451
+rect_min_size = Vector2( 100, 100 )
+rect_scale = Vector2( 0.25, 0.25 )
+rect_pivot_offset = Vector2( 341, 526 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 340.631, 526.495 )
+texture = ExtResource( 2 )
+
+[node name="Logo" type="Sprite" parent="."]
+position = Vector2( 341, 526 )
+texture = ExtResource( 4 )
+
+[node name="NumberTop" type="Sprite" parent="."]
+position = Vector2( 43.0791, 42.702 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="NumberBottom" type="Sprite" parent="."]
+position = Vector2( 643.242, 1010.24 )
+rotation = -3.14159
+texture = ExtResource( 3 )
+centered = false
+
+[node name="CardBorder" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
